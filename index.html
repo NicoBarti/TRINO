@@ -181,10 +181,12 @@
             </label>
           </div> -->
 
-          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
+          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#horas" rel="noopener">
             <i class="ai-calendar fs-xl me-2 ms-n1"></i>
             Agenda tu Hora
           </a>
+
+
 
           <!-- Mobile menu toggler (Hamburger) -->
           <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
@@ -445,8 +447,9 @@
             <div class="col py-5 mb-md-4 mb-lg-5">
               <h1 class="display-5 mb-4" style="max-width: 700px;">Tratamiento Médico Integral de la Obesidad</h1>
               <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">Comienza tu viaje hacia una mejor salud, trabajando con un equipo de profesionales que te ayudarán a cumplir tus objetivos.</p>
+
               <div class="position-relative d-inline-flex align-items-center">
-                <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="https://www.youtube.com/watch?v=SZCxKjgReQ4" data-bs-toggle="video" aria-label="Play video">
+                <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#reservarHora">
                   <i class="ai-calendar"></i>
                 </a>
                 <span class="text-body fs-lg fw-semibold ms-3">Agenda tu Hora</span></div>
@@ -455,6 +458,45 @@
         </div>
       </section>
 
+
+      <!-- Default modal -->
+      <div class="modal fade" id="reservarHora" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Reserva tu hora</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <iframe style="overflow: hidden; border-radius: 10px; margin-bottom: 20px;"
+            src="https://agendamiento.reservo.cl/makereserva/agenda/A0N2rfj0y0tknb4s6l86YjO3h7c7yR"
+            width="100%" height="400" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+              <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal markup -->
+      <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Reserva tu hora</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+              <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary w-100 w-sm-auto ms-sm-3">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Features (Advantages) slider -->
       <section class="pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
@@ -904,9 +946,15 @@ Es multifactorial, progresiva y recidivante, por lo que requiere un tratamiento 
 
 
       <!-- Schedule -->
-      <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
-        <h2 class="h1 text-center pb-3 pt-sm-3 pt-lg-5 mb-3 mb-lg-4">Schedule</h2>
-        <div class="calendar" data-calendar-options='{
+
+      <!-- Reservo -->
+      <section id = "horas" class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5">
+        <h2 class="h1 text-center pb-3 pt-sm-3 pt-lg-5 mb-3 mb-lg-4">Horas disponibles</h2>
+        <iframe style="overflow: hidden; border-radius: 10px; margin-bottom: 20px;"
+        src="https://agendamiento.reservo.cl/makereserva/agenda/A0N2rfj0y0tknb4s6l86YjO3h7c7yR"
+        width="100%" height="550" frameborder="0"></iframe>
+
+        <!-- <div class="calendar" data-calendar-options='{
           "initialDate": "2022-08-01",
           "headerToolbar": {
             "left": "prev,next today",
@@ -1010,7 +1058,7 @@ Es multifactorial, progresiva y recidivante, por lo que requiere un tratamiento 
               "classNames": ["event-custom-style", "bg-light", "text-nav", "border-0", "rounded-1", "p-2", "ps-3", "border-start", "border-5", "border-danger"]
             }
           ]
-        }'></div>
+        }'></div> -->
         <div class="text-center pt-4 pt-md-5 mt-2 mt-sm-3 mt-md-0">
           <a class="btn btn-outline-primary fs-base" href="#">Try a free lesson</a>
         </div>
