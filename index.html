@@ -172,7 +172,7 @@
 
           <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" data-bs-toggle="modal" data-bs-target="#reservarHora">
             <i class="ai-calendar fs-xl me-2 ms-n1"></i>
-            Agenda tu Hora
+            Reserva tu Hora
           </a>
 
 
@@ -193,22 +193,50 @@
                 <a class="nav-link" href="#que_es_obesidad">¿Qué es la obesidad?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#quienes_somos">Quienes somos</a>
+                <a class="nav-link" href="#quienes_somos">Nuestro equipo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#quienes_pueden_atenderse">¿Puedo atenderme?</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a>
+              </li>
             </ul>
             <div class="d-sm-none p-3 mt-n3">
               <a class="btn btn-primary w-100 mb-1" href="https://themes.getbootstrap.com/product/around-multipurpose-template-ui-kit/" target="_blank" rel="noopener">
-                <i class="ai-cart fs-xl me-2 ms-n1"></i>
-                Buy now
+                <i class="ai-calendar fs-xl me-2 ms-n1"></i>
+                Reserva tu Hora
               </a>
             </div>
           </nav>
         </div>
       </header>
 
+
+      <!-- Default modal -->
+      <div class="modal fade" id="contacto" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contacto</h5>
+            </div>
+            <div class="modal-body">
+              <div class="d-sm-flex align-items-center pt-4 mt-2 mt-sm-0">
+                <a class = "btn btn-icon btn-sm btn-primary rounded-circle ai-mail mx-2" href="mailto:contacto@trinoonline.cl">
+                  <i class=""></i>
+                </a>
+                <p class="nav fs-lg order-sm-1 justify-content-center mb-0">
+                  <span class="text-body-secondary">Escríbenos a</span>
+                  <a class="nav-link fw-normal p-0 ms-1" href="mailto:contacto@trinoonline.cl" rel="noopener">contacto@trinoonline.cl  </a>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer flex-column flex-sm-row">
+              <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Hero slider -->
       <section class="position-relative min-vh-100 py-5" data-bs-theme="light">
@@ -251,7 +279,7 @@
                 <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#reservarHora">
                   <i class="ai-calendar"></i>
                 </a>
-                <span class="text-body fs-lg fw-semibold ms-3">Agenda tu Hora</span></div>
+                <span class="text-body fs-lg fw-semibold ms-3">Reserva tu Hora</span></div>
             </div>
           </div>
         </div>
@@ -263,9 +291,15 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Reserva tu hora</h4>
+              <h4 class="modal-title">Dra. Perla Letelier</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <li class="d-flex align-items-center mb-3">
+              <!--<i class="ai-dollar  text-primary"></i>-->
+              <div class="ps-2 ms-1">
+                <div class="text-nav fw-medium"> Valor consulta: $75.000</div>
+              </div>
+            </li>
             <div class="modal-body">
             <iframe style="overflow: hidden; border-radius: 10px; margin-bottom: 20px;"
             src="https://agendamiento.reservo.cl/makereserva/agenda/A0N2rfj0y0tknb4s6l86YjO3h7c7yR"
@@ -407,7 +441,7 @@
                       <p class="fs-sm mb-0">Involucra centros cerebrales de regulación del peso corporal y la conducta.</p>
                     </div>
                   </div>
-                  <a class="btn btn-primary w-100 w-sm-auto" href="#">Try a free lesson</a>
+                  <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora">Reserva tu Hora</a>
                 </div>
               </div>
             </div>
@@ -614,37 +648,37 @@
             <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal" data-bs-target="#PerlaLetelier">
               <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/01.jpg" width="340" alt="Alisa Black">
               <h3 class="h5 mb-1">Dra. Perla Letelier</h3>
-              <p class="mb-0 text-body-secondary">Medicina de la Obesidad</p>
+              <p class="mb-0 text-body-secondary">Psiquiatra - Medicina de la Obesidad</p>
             </a>
           </div>
           <div class="col text-center pt-2">
             <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal" data-bs-target="#Luis">
               <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/02.jpg" width="340"  alt="Michelle Yang">
               <h3 class="h5 mb-1">Ps. Luis Marileo</h3>
-              <p class="mb-0 text-body-secondary">Terapeuta Psicotrauma</p>
+              <p class="mb-0 text-body-secondary">Terapeuta experto en Trauma</p>
             </a>
           </div>
-          <div class="col text-center pt-2">
+          <!-- <div class="col text-center pt-2">
             <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal" data-bs-target="#Paola">
               <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/Pend.jpg" width="340" alt="Robert Fox">
               <h3 class="h5 mb-1">Ps. Paola Giordani</h3>
               <p class="mb-0 text-body-secondary">Terapeuta Conducta Alimentaria</p>
             </a>
-          </div>
+          </div> -->
           <div class="col text-center pt-2">
             <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal" data-bs-target="#Maangeles">
-              <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/Pend.jpg" width="340" alt="Jane Cooper">
-              <h3 class="h5 mb-1">Nut. María de los Ángeles</h3>
+              <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/04.jpg" width="340" alt="Jane Cooper">
+              <h3 class="h5 mb-1">Nta. María de los Ángeles Rosales</h3>
               <p class="mb-0 text-body-secondary">Nutricionista</p>
             </a>
           </div>
-          <div class="col text-center pt-2">
+          <!-- <div class="col text-center pt-2">
             <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal" data-bs-target="#Soledad">
               <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/Pend.jpg" width="340" alt="Cody Fisher">
               <h3 class="h5 mb-1">?</h3>
               <p class="mb-0 text-body-secondary">Médico Internista</p>
             </a>
-          </div>
+          </div> -->
           <div class="col text-center pt-2">
             <a class="card-hover card-lifted d-inline-block text-decoration-none" href="#">
               <!-- <img class="card-lifted d-block rounded-5 mb-3" src="assets/img/landing/yoga-studio/trainers/06.jpg" width="340" alt="Jenny Wilson">
@@ -690,11 +724,11 @@
                 <div class="pt-4 mt-lg-2">
                   <!-- <p class="h5 mb-2"></p> -->
                   <ul>
-                    <li>Médica cirujana Pontificia Universidad Católica</li>
-                    <li>Psiquiatra Adultos Conacem</li>
-                    <li>International board of lifestyle medicine</li>
-                    <li>Harvard blackbourn obesity course</li>
-                    <li>Obesity medicine association certificate</li>
+                    <li>Médica Cirujana Pontificia Universidad Católica.</li>
+                    <li>Psiquiatra Adultos Conacem.</li>
+                    <li>International Board of Lifestyle Medicine.</li>
+                    <li>Harvard Blackburn Obesity course.</li>
+                    <li>Obesity Medicine Association certificate.</li>
                   </ul>
                 </div>
                   <figure>
@@ -726,20 +760,20 @@
             </div>
             <!-- EDITAR AQUI CONTENIDO -->
             <div class="modal-body">
-                <div class = "center"><img class="rounded-5" src="assets/img/landing/yoga-studio/trainers/Pend.jpg" style = "height: 150px;" alt="Image"></div>
+                <div class = "center"><img class="rounded-5" src="assets/img/landing/yoga-studio/trainers/02.jpg" style = "height: 150px;" alt="Image"></div>
                 <div class="pt-4 mt-lg-2">
                   <!-- <p class="h5 mb-2"></p> -->
                   <ul>
-                    <li>CV Abreviado</li>
-                    <!-- <li>Psiquiatra Adultos Conacem</li>
-                    <li>International board of lifestyle medicine</li>
-                    <li>Harvard blackbourn obesity course</li>
-                    <li>Obesity medicine association certificate</li> -->
+                    <li>Psicólogo Universidad de las Américas.</li>
+                    <li>Magíster en Psicología mención Psicoanálisis Universidad Diego Portales.</li>
+                    <li>Diplomado en Trauma Universidad de Chile.</li>
+                    <li>Formación en Terapia EMDR, EMDR Chile.</li>
+                    <li>Analista en Formación ICHPA.</li>
                   </ul>
                 </div>
                   <figure>
                     <blockquote class="blockquote">
-                      <p>Mensaje personal breve, (puede ser más largo que el mío, se hace scroll para abajo)
+                      <p>Creo en la importancia de reprocesar el trauma para construir un bienestar integral, ayudándote a comprender tu historia y recuperar el equilibrio en tu vida.
                       </p>
                     </blockquote>
                     <figcaption class="blockquote-footer">Luis</figcaption>
@@ -797,7 +831,7 @@
         <div class="modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Nut. María de los Angeles </h4>
+              <h4 class="modal-title">Nta. María de los Ángeles Rosales</h4>
               <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#contactoMaangeles">
               <div class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#contactoMaangeles">
                 <i class="ai-calendar"></i>
@@ -806,23 +840,23 @@
             </div>
             <!-- EDITAR AQUI CONTENIDO -->
             <div class="modal-body">
-                <div class = "center"><img class="rounded-5" src="assets/img/landing/yoga-studio/trainers/Pend.jpg" style = "height: 150px;" alt="Image"></div>
+                <div class = "center"><img class="rounded-5" src="assets/img/landing/yoga-studio/trainers/04.jpg" style = "height: 150px;" alt="Image"></div>
                 <div class="pt-4 mt-lg-2">
                   <!-- <p class="h5 mb-2"></p> -->
                   <ul>
-                    <li>CV Abreviado</li>
-                    <!-- <li>Psiquiatra Adultos Conacem</li>
-                    <li>International board of lifestyle medicine</li>
-                    <li>Harvard blackbourn obesity course</li>
-                    <li>Obesity medicine association certificate</li> -->
+                    <!-- <li>CV Abreviado</li> -->
+                    <li>Licenciada en Nutrición Universidad del Desarrollo.</li>
+                    <li>Diplomada en Trastornos de la Conducta Alimentaria, SETA Chile.</li>
+                    <li>Diplomada en Alto Rendimiento Deportivo, Universidad del Desarrollo.</li>
+                    <li>Estudiante de Psicología Universidad San Sebastián.</li>
                   </ul>
                 </div>
                   <figure>
                     <blockquote class="blockquote">
-                      <p>Mensaje personal breve (puede ser más largo que el mío, se hace scroll para abajo)
+                      <p>Te acompaño en el camino hacia una alimentación más consciente y equilibrada, ayudándote a comprender y redefinir la relación que tienes con la comida. A través de un enfoque personalizado trabajaremos en cambiar hábitos para que puedas alcanzar tus objetivos de manera sostenible.
                       </p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">Kanki</figcaption>
+                    <figcaption class="blockquote-footer">Ángeles</figcaption>
                   </figure>
             </div>
             <div class="modal-footer flex-column flex-sm-row">
@@ -881,24 +915,31 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <li class="d-flex align-items-center mb-3">
+                <!-- <li class="d-flex align-items-center mb-3">
                   <i class="ai-whatsapp text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> +56 9 8875543</div>
+                    <div class="text-nav fw-medium"> +56 9 30060253</div>
                   </div>
-                </li>
+                </li> -->
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-mail  text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> luis@gmail.com</div>
+                    <div class="text-nav fw-medium"> ps.luis.marileomuena@gmail.com</div>
                   </div>
                 </li>
                 <li class="d-flex align-items-center mb-3">
+                  <i class="ai-dollar  text-primary"></i>
+                  <div class="ps-2 ms-1">
+                    <div class="text-nav fw-medium"> Valor consulta: $60.000</div>
+                  </div>
+                </li>
+
+                <!-- <li class="d-flex align-items-center mb-3">
                   <i class="ai-instagram  text-primary"></i>
                   <div class="ps-2 ms-1">
                     <div class="text-nav fw-medium"> @instagram</div>
                   </div>
-                </li>
+                </li> -->
             </div>
             <div class="modal-footer flex-column flex-sm-row">
               <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
@@ -934,6 +975,12 @@
                     <div class="text-nav fw-medium"> @instagram</div>
                   </div>
                 </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="ai-dollar  text-primary"></i>
+                  <div class="ps-2 ms-1">
+                    <div class="text-nav fw-medium"> Valor</div>
+                  </div>
+                </li>
             </div>
             <div class="modal-footer flex-column flex-sm-row">
               <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
@@ -947,28 +994,36 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Nut. Ma Angeles</h4>
+              <h4 class="modal-title">Nta. María de los Ángeles Rosales</h4>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-whatsapp text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> +56 9 8875543</div>
+                    <div class="text-nav fw-medium"> +56 9 91590709</div>
                   </div>
                 </li>
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-mail  text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> kanki@gmail.com</div>
+                    <div class="text-nav fw-medium"> mariadelosangeles.r.esquerre@gmail.com</div>
                   </div>
                 </li>
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-instagram  text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> @instagram</div>
+                    <div class="text-nav fw-medium"> @angeles.nutricion</div>
                   </div>
                 </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="ai-dollar  text-primary"></i>
+                  <div class="ps-2 ms-1">
+                    <div class="text-nav fw-medium"> Valor consulta: $50.000</div>
+                  </div>
+                </li>
+
+
             </div>
             <div class="modal-footer flex-column flex-sm-row">
               <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
@@ -1002,6 +1057,12 @@
                   <i class="ai-instagram  text-primary"></i>
                   <div class="ps-2 ms-1">
                     <div class="text-nav fw-medium"> @instagram</div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="ai-dollar  text-primary"></i>
+                  <div class="ps-2 ms-1">
+                    <div class="text-nav fw-medium"> Valor</div>
                   </div>
                 </li>
             </div>
@@ -1049,7 +1110,7 @@
                 <path d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z"></path>
               </svg>
               <div class="ps-2 ms-1">
-                <div class="text-nav fw-medium">Personas con obesidad que quieran tratamiento sin cirugía, o que no cumplan criterios para un tratamiento quirúrgico.</div>
+                <div class="text-nav fw-medium">Personas con obesidad que no cumplan criterios para un tratamiento quirúrgico o que prefieran un manejo sin cirugía.</div>
               </div>
             </li>
             <li class="d-flex align-items-center mb-3">
@@ -1094,16 +1155,30 @@
       <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
         <div class="border-bottom text-center pb-4">
           <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="index.html">
-            <img src="assets/img/landing/yoga-studio/logo/logo3.png" width="230"></img>
+            <img src="assets/img/landing/yoga-studio/logo/logo3.png" width="200"></img>
           </a>
-        </div>
-        <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
-          <div class="d-flex justify-content-center gap-3 order-sm-2 mb-4 mb-sm-0">
-            <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle" href="#" aria-label="Instagram">
-              <i class="ai-instagram"></i>
+          <ul class = "nav justify-content-right py-1 pb-sm-2">
+            <li class = "nav-item">
+              <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle mx-2" href="https://www.instagram.com/trino_online?igsh=NTJwYmg4dmFoa3lv" aria-label="Instagram">
+                <i class="ai-instagram"></i>
+              </a>
+            </li>
+            <!-- <li class = "nav-item">
+            <a class = "btn btn-icon btn-sm btn-secondary rounded-circle ai-mail mx-2" href="mailto:contacto@trinoonline.cl">
+              <i class=""></i>
             </a>
-          </div>
+            </li> -->
+          </ul>
+
+        </div>
+        <div class="d-sm-flex align-items-right justify-content-between pt-4 mt-2 mt-sm-0">
+          <!--<div class="d-flex justify-content-center gap-3 order-sm-2 mb-4 mb-sm-0 nav fs-sm">-->
           <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
+            <span class="text-body-secondary">Escríbenos a</span>
+            <a class="nav-link fw-normal p-0 ms-1" href="mailto:contacto@trinoonline.cl" rel="noopener">contacto@trinoonline.cl  </a>
+          </p>
+          <!--</div>-->
+          <p class="nav fs-sm order-sm-1 justify-content-right mb-0">
             <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
             <a class="nav-link fw-normal p-0 ms-1" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
           </p>
