@@ -19,6 +19,24 @@
 
   gtag('config', 'G-53SSHD7NN3');
 </script>
+<!-- Event snippet for Compra conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16899869871/f5xfCL276KQaEK-Zvvo-',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <meta charset="utf-8">
 
     <!-- Viewport -->
@@ -191,7 +209,8 @@
 
           </a>
 
-          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#reservarHora">
+          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#reservarHora"
+          onclick="return gtag_report_conversion('http://www.trinoonline.cl')">
             <i class="ai-calendar fs-xl me-2 ms-n1"></i>
             Reserva tu Hora
           </a>
@@ -228,7 +247,8 @@
               </li>
             </ul>
             <div class="d-lg-none p-3 mt-n3">
-              <a class="btn btn-primary w-100 mb-1" data-bs-toggle="modal" data-bs-target="#reservarHora">
+              <a class="btn btn-primary w-100 mb-1" data-bs-toggle="modal" data-bs-target="#reservarHora"
+              onclick="return gtag_report_conversion('http://www.trinoonline.cl')">
                 <i class="ai-calendar fs-xl me-2 ms-n1"></i>
                 Reserva tu Hora
               </a>
@@ -301,7 +321,8 @@
               <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">Comienza tu viaje hacia una mejor salud, trabajando con un equipo de profesionales que te ayudarán a cumplir tus objetivos.</p>
 
               <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#reservarHora">
-                <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#reservarHora">
+                <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#reservarHora"
+                onclick="return gtag_report_conversion('http://www.trinoonline.cl')">
                   <i class="ai-calendar"></i>
                 </a>
                 <span class="text-body fs-lg fw-semibold ms-3">Reserva tu Hora</span></div>
@@ -466,7 +487,8 @@
                       <p class="fs-sm mb-0">Involucra centros cerebrales de regulación del peso corporal y la conducta.</p>
                     </div>
                   </div>
-                  <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora">Reserva tu Hora</a>
+                  <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora"
+                  onclick="return gtag_report_conversion('http://www.trinoonline.cl')">Reserva tu Hora</a>
                 </div>
               </div>
             </div>
@@ -718,7 +740,8 @@
             <div class="modal-header">
               <h4 class="modal-title">Dra. Perla Letelier </h4>
               <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#reservarHora">
-              <div class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#reservarHora">
+              <div class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal" data-bs-target="#reservarHora"
+              onclick="return gtag_report_conversion('http://www.trinoonline.cl')">
                 <i class="ai-calendar"></i>
               </div><span class="text-body fs-lg fw-semibold ms-3">Agenda</span>
             </div>
