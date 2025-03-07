@@ -16,15 +16,15 @@
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
+  // var callback = function () {
+  //   if (typeof(url) != 'undefined') {
+  //     window.location = url;
+  //   }
+  // };
   gtag('event', 'conversion', {
       'send_to': 'AW-16899869871/f5xfCL276KQaEK-Zvvo-',
       'transaction_id': '',
-      'event_callback': callback
+      // 'event_callback': callback
   });
   return false;
 }
@@ -336,7 +336,7 @@ function gtag_report_conversion(url) {
             <li class="d-flex align-items-center mb-3">
               <!--<i class="ai-dollar  text-primary"></i>-->
               <div class="ps-2 ms-1">
-                <div class="text-nav fw-medium"> Valor consulta: $75.000</div>
+                <div class="text-nav fw-medium"> Valor consulta online: $75.000</div>
               </div>
             </li>
             <div class="modal-body">
@@ -828,7 +828,7 @@ function gtag_report_conversion(url) {
                     <li>Psicóloga Universidad de la Frontera.</li>
                     <li>Magíster en intervención psicosocial Universidad de Barcelona.</li>
                     <li>Docente clínica Universidad de Viña del Mar.</li>
-                    <li>Psicoterapeuta especializada en Binge Eating Disorder (trastorno por atracón).</li>
+                    <li>Psicoterapeuta especializada en Binge Eating Disorder (trastorno por atracón), Centro de estudios Sistémicos.</li>
                     <!-- <li>Obesity medicine association certificate</li> -->
                   </ul>
                 </div>
@@ -951,7 +951,7 @@ function gtag_report_conversion(url) {
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-dollar  text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> Valor consulta: $60.000</div>
+                    <div class="text-nav fw-medium"> Valor consulta online: $60.000</div>
                   </div>
                 </li>
 
@@ -999,7 +999,7 @@ function gtag_report_conversion(url) {
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-dollar  text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> Valor de la consulta $50.000</div>
+                    <div class="text-nav fw-medium"> Valor consulta online: $50.000</div>
                   </div>
                 </li>
             </div>
@@ -1040,7 +1040,7 @@ function gtag_report_conversion(url) {
                 <li class="d-flex align-items-center mb-3">
                   <i class="ai-dollar  text-primary"></i>
                   <div class="ps-2 ms-1">
-                    <div class="text-nav fw-medium"> Valor consulta: $50.000</div>
+                    <div class="text-nav fw-medium"> Valor consulta online: $50.000</div>
                   </div>
                 </li>
 
