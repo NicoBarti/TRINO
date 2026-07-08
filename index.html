@@ -172,6 +172,12 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         transform: none;
       }
     }
+
+    .dark-text-glow {
+      color: #333333;
+      /* 0px offset creates an even glow, 8px is the blur, 0.9 is the opacity */
+      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
+    }
   </style>
 
   <!-- Page loading scripts -->
@@ -326,9 +332,10 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="container position-relative z-2 py-lg-3 py-xl-5 my-5">
         <div class="row pt-md-3 py-xxl-5 my-5">
           <div class="col py-5 mb-md-4 mb-lg-5">
-            <h1 class="display-5 mb-4" style="max-width: 700px;">Tratamiento Médico Integral de la <span
-                class="text-primary">Obesidad</span></h1>
-            <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">Comienza tu viaje hacia una
+            <h1 class="display-5 mb-4 dark-text-glow" style="max-width: 700px;">Tratamiento Médico Integral de la
+              Obesidad</h1>
+            <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5 dark-text-glow" style="max-width: 500px;">Comienza tu
+              viaje hacia una
               mejor salud, trabajando con un equipo de profesionales que te ayudarán a cumplir tus objetivos.</p>
 
             <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal"
