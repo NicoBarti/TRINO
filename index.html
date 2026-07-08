@@ -338,13 +338,21 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               viaje hacia una
               mejor salud, trabajando con un equipo de profesionales que te ayudarán a cumplir tus objetivos.</p>
 
-            <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal"
+            <div class="position-relative d-none d-lg-inline-flex align-items-center" data-bs-toggle="modal"
               data-bs-target="#reservarHora">
               <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal"
                 data-bs-target="#reservarHora" onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
                 <i class="ai-calendar"></i>
               </a>
-              <span class="text-body fs-lg fw-semibold ms-3">Reserva tu Hora</span>
+              <span class="text-body fs-lg fw-semibold ms-3 dark-text-glow">Reserva tu Hora</span>
+            </div>
+
+            <div class="d-lg-none" data-bs-toggle="modal" data-bs-target="#reservarHora">
+              <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora"
+                onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
+                <i class="ai-calendar fs-xl me-2 ms-n1"></i>
+                Reserva tu Hora
+              </a>
             </div>
           </div>
         </div>
