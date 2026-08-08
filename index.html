@@ -177,6 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border: 1px solid #e0e0e0;
     animation: floatAnimation 3s ease-in-out infinite;
     pointer-events: none;
+    white-space: nowrap;
   }
 
   .whatsapp-float-btn {
@@ -205,6 +206,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     width: 32px;
     height: 32px;
     fill: #ffffff;
+  }
+
+  /* AJUSTES EXCLUSIVOS PARA MÓVILES */
+  @media (max-width: 768px) {
+    .whatsapp-float-container {
+      bottom: 15px;
+      right: 15px;
+      gap: 0;
+    }
+
+    .whatsapp-tooltip {
+      display: none; /* Oculta el texto largo en celulares para no tapar la pantalla */
+    }
+
+    .whatsapp-float-btn {
+      width: 52px;
+      height: 52px;
+    }
+
+    .whatsapp-float-btn svg {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   @keyframes pulseWhatsapp {
