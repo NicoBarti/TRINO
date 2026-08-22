@@ -207,7 +207,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height: 32px;
     fill: #ffffff;
   }
+  /* Estilos para Alineación Perfecta del Equipo TRINO */
+  .team-card-img {
+    width: 100%;
+    height: 320px; /* Altura fija milimétrica para todas las imágenes */
+    object-fit: cover;
+    object-position: top center; /* Enfoca el rostro en la parte superior */
+    background-color: #f8f9fa;
+    border: 1px solid #eaeaea;
+  }
 
+  .team-card-title {
+    min-height: 54px; /* Alinea los cargos de abajo aunque el nombre tenga 1 o 2 líneas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+
+  /* Ajuste Responsive para Celulares */
+  @media (max-width: 576px) {
+    .team-card-img {
+      height: 280px;
+    }
+    .team-card-title {
+      min-height: auto;
+    }
+  }
   /* AJUSTES EXCLUSIVOS PARA MÓVILES */
   @media (max-width: 768px) {
     .whatsapp-float-container {
@@ -622,52 +648,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
 
-   <!-- Trainers (Grid) -->
+   <!-- Trainers (Grid ALINEADA) -->
     <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="quienes_somos">
       <h2 class="h1 text-center pt-2 pt-sm-4 pt-lg-5 pb-2 mb-3 mb-lg-4 mt-md-3 mt-lg-0">Nuestro equipo</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 align-items-stretch">
         
         <!-- Dra. Perla Letelier -->
-        <div class="col text-center pt-2">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal"
-            data-bs-target="#PerlaLetelier">
-            <img class="card-lifted d-block rounded-5 mb-3 bg-secondary" src="assets/img/landing/trino/trainers/01.png" width="340"
-              alt="Dra. Perla Letelier">
-            <h3 class="h5 mb-1">Dra. Perla Letelier</h3>
-            <p class="mb-0 text-body-secondary">Psiquiatra - Medicina de la Obesidad</p>
+        <div class="col text-center pt-2 d-flex flex-column">
+          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#PerlaLetelier">
+            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/01.png" alt="Dra. Perla Letelier">
+            <div class="team-card-title">
+              <h3 class="h5 mb-0">Dra. Perla Letelier</h3>
+            </div>
+            <p class="mb-0 text-body-secondary fs-sm">Psiquiatra - Medicina de la Obesidad</p>
           </a>
         </div>
 
         <!-- Ps. Camila Paz Contreras -->
-        <div class="col text-center pt-2">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal"
-            data-bs-target="#Paola">
-            <img class="card-lifted d-block rounded-5 mb-3 bg-secondary" src="assets/img/landing/trino/trainers/02.png" width="340"
-              alt="Ps. Camila Paz Contreras">
-            <h3 class="h5 mb-1">Ps. Camila Paz Contreras</h3>
-            <p class="mb-0 text-body-secondary">Terapeuta Conducta Alimentaria</p>
+        <div class="col text-center pt-2 d-flex flex-column">
+          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#Paola">
+            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/02.png" alt="Ps. Camila Paz Contreras">
+            <div class="team-card-title">
+              <h3 class="h5 mb-0">Ps. Camila Paz Contreras</h3>
+            </div>
+            <p class="mb-0 text-body-secondary fs-sm">Terapeuta Conducta Alimentaria</p>
           </a>
         </div>
 
         <!-- Nta. María de los Ángeles Rosales -->
-        <div class="col text-center pt-2">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal"
-            data-bs-target="#Maangeles">
-            <img class="card-lifted d-block rounded-5 mb-3 bg-secondary" src="assets/img/landing/trino/trainers/03.png" width="340"
-              alt="Nta. María de los Ángeles Rosales">
-            <h3 class="h5 mb-1">Nta. María de los Ángeles Rosales</h3>
-            <p class="mb-0 text-body-secondary">Nutricionista</p>
+        <div class="col text-center pt-2 d-flex flex-column">
+          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#Maangeles">
+            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/03.png" alt="Nta. María de los Ángeles Rosales">
+            <div class="team-card-title">
+              <h3 class="h5 mb-0">Nta. María de los Ángeles Rosales</h3>
+            </div>
+            <p class="mb-0 text-body-secondary fs-sm">Nutricionista</p>
           </a>
         </div>
 
         <!-- Nut. Claudia Vega Soto -->
-        <div class="col text-center pt-2">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none" data-bs-toggle="modal"
-            data-bs-target="#ClaudiaVega">
-            <img class="card-lifted d-block rounded-5 mb-3 bg-secondary" src="assets/img/landing/trino/trainers/04.png" width="340"
-              alt="Nut. Claudia Vega Soto">
-            <h3 class="h5 mb-1">Nut. Claudia Vega Soto</h3>
-            <p class="mb-0 text-body-secondary">Nutricionista</p>
+        <div class="col text-center pt-2 d-flex flex-column">
+          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#ClaudiaVega">
+            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/04.png" alt="Nut. Claudia Vega Soto">
+            <div class="team-card-title">
+              <h3 class="h5 mb-0">Nut. Claudia Vega Soto</h3>
+            </div>
+            <p class="mb-0 text-body-secondary fs-sm">Nutricionista</p>
           </a>
         </div>
 
@@ -725,6 +751,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Ps. Camila Paz Contreras</h4>
+            <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#reservarHora">
+              <div class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal"
+                data-bs-target="#reservarHora" onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
+                <i class="ai-calendar"></i>
+              </div><span class="text-body fs-lg fw-semibold ms-3">Agenda</span>
+            </div>
           </div>
           <!-- EDITAR AQUI CONTENIDO -->
           <div class="modal-body">
@@ -767,6 +799,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Nta. María de los Ángeles Rosales</h4>
+            <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#reservarHora">
+              <div class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal"
+                data-bs-target="#reservarHora" onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
+                <i class="ai-calendar"></i>
+              </div><span class="text-body fs-lg fw-semibold ms-3">Agenda</span>
+            </div>
           </div>
           <!-- EDITAR AQUI CONTENIDO -->
           <div class="modal-body">
