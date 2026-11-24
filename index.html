@@ -34,6 +34,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
 
+<link rel="preload" as="image" href="assets/img/landing/trino/hero/01.jpg">
 <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
 <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
 <link rel="stylesheet" href="assets/icons/around-icons.min.css">
@@ -87,12 +88,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 
 <script>
-window.addEventListener('load', function () {
-  var p = document.querySelector('.page-loading');
-  if (!p) return;
-  p.classList.remove('active');
-  setTimeout(function () { p.remove(); }, 1500);
-});
+(function () {
+  var hecho = false;
+  function ocultar() {
+    if (hecho) return;
+    hecho = true;
+    var p = document.querySelector('.page-loading');
+    if (!p) return;
+    p.classList.remove('active');
+    setTimeout(function () { p.remove(); }, 1000);
+  }
+  document.addEventListener('DOMContentLoaded', function () { setTimeout(ocultar, 300); });
+  window.addEventListener('load', ocultar);
+  setTimeout(ocultar, 2500); // seguridad: nunca más de 2,5 s
+})();
 </script>
 </head>
 
@@ -218,7 +227,11 @@ window.addEventListener('load', function () {
           <h6 class="modal-title" id="reservarTitulo">Agenda tu Hora</h6>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body position-relative" style="min-height: 620px;">
+          <div id="reservoLoader" class="position-absolute top-50 start-50 translate-middle text-center" style="z-index: 2;">
+            <div class="spinner-border text-primary" role="status" aria-hidden="true"></div>
+            <p class="fs-sm text-body-secondary mt-3 mb-0">Cargando agenda...</p>
+          </div>
           <iframe id="reservoFrame"
             data-src="https://agendamiento.reservo.cl/makereserva/agenda/k06KGpW0t0oSdT156J76XqQ3F7I7S0"
             title="Agenda tu hora en TRINO"
@@ -681,11 +694,6 @@ window.addEventListener('load', function () {
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
 <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
-<script src="assets/vendor/@fullcalendar/core/index.global.min.js"></script>
-<script src="assets/vendor/@fullcalendar/daygrid/index.global.min.js"></script>
-<script src="assets/vendor/@fullcalendar/list/index.global.min.js"></script>
-<script src="assets/vendor/@fullcalendar/timegrid/index.global.min.js"></script>
-<script src="assets/vendor/@fullcalendar/bootstrap5/index.global.min.js"></script>
 <script src="assets/js/theme.min.js"></script>
 
 <script>
@@ -700,11 +708,24 @@ window.addEventListener('load', function () {
     });
   })();
 
-  // Carga la agenda de Reservo solo cuando se abre el modal
-  document.getElementById('reservarHora').addEventListener('show.bs.modal', function () {
+  // Agenda de Reservo: se precarga en segundo plano para que el modal abra listo
+  (function () {
     var f = document.getElementById('reservoFrame');
-    if (f && !f.getAttribute('src')) { f.setAttribute('src', f.getAttribute('data-src')); }
-  });
+    var l = document.getElementById('reservoLoader');
+    if (!f) return;
+    f.addEventListener('load', function () {
+      if (f.getAttribute('src') && l) { l.style.display = 'none'; }
+    });
+    function cargar() {
+      if (!f.getAttribute('src')) { f.setAttribute('src', f.getAttribute('data-src')); }
+    }
+    document.getElementById('reservarHora').addEventListener('show.bs.modal', cargar);
+    document.querySelectorAll('[data-bs-target="#reservarHora"]').forEach(function (b) {
+      b.addEventListener('mouseenter', cargar, { once: true });
+      b.addEventListener('touchstart', cargar, { once: true, passive: true });
+    });
+    window.addEventListener('load', function () { setTimeout(cargar, 3000); });
+  })();
 </script>
 </body>
 </html>
