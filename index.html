@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-
+<html lang="es" data-bs-theme="light">
 <head>
-
-
-  <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -12,1069 +9,657 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-T5ZXVX33');</script>
 <!-- End Google Tag Manager -->
 
-  <meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <!-- Viewport -->
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>TRINO | Tratamiento Médico Integral de la Obesidad Online</title>
+<meta name="description" content="Tratamiento médico integral de la obesidad online: evaluación médica, psicológica y nutricional, y un plan personalizado con seguimiento cercano. Reserva tu hora.">
+<link rel="canonical" href="https://www.trinoonline.cl/">
 
-  <!-- SEO meta tags -->
-  <title>TRINO | Tratamiento Médico Integral de la Obesidad </title>
-  <meta name="description" content="Tratamiento Médico Integral de la Obesidad">
-  <!-- Imagen destacada para Google y Redes Sociales -->
-  <meta property="og:image" content="https://www.trinoonline.cl/assets/img/landing/trino/trainers/01.png">
-  <meta property="og:image:width" content="600">
-  <meta property="og:image:height" content="600">
-  <meta name="thumbnail" content="https://www.trinoonline.cl/assets/img/landing/trino/trainers/01.png">
-  <link rel="image_src" href="https://www.trinoonline.cl/assets/img/landing/trino/trainers/01.png">
-  <meta name="keywords"
-    content="obesidad, tratamiento, medico, ozempic, fentermina, contrave, sobrepeso, semaglutide, bupropion, naltrexona">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.trinoonline.cl/">
+<meta property="og:title" content="TRINO | Tratamiento Médico Integral de la Obesidad Online">
+<meta property="og:description" content="Evaluación médica, psicológica y nutricional, y un plan personalizado con seguimiento cercano.">
+<meta property="og:image" content="https://www.trinoonline.cl/assets/img/landing/trino/trainers/01.png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta name="thumbnail" content="https://www.trinoonline.cl/assets/img/landing/trino/trainers/01.png">
+<link rel="image_src" href="https://www.trinoonline.cl/assets/img/landing/trino/trainers/01.png">
 
-  <!-- Webmanifest + Favicon / App icons -->
-  <link rel="manifest" href="/manifest.json">
-  <link rel="icon" type="image/png" href="assets/img/landing/trino/logo/pe.png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/img/landing/trino/logo/pe.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/png" href="assets/img/landing/trino/logo/pe.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/landing/trino/logo/pe.png">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
 
+<link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+<link rel="stylesheet" href="assets/icons/around-icons.min.css">
+<link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
 
-  <!-- Import Google font (Inter) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"
-    id="google-font">
+<style>
+/* Pantalla de carga */
+.page-loading{position:fixed;inset:0;width:100%;height:100%;transition:all .4s .2s ease-in-out;background-color:#fff;opacity:0;visibility:hidden;z-index:9999}
+.page-loading.active{opacity:1;visibility:visible}
+.page-loading-inner{position:absolute;top:50%;left:0;width:100%;text-align:center;transform:translateY(-50%);transition:opacity .2s ease-in-out;opacity:0}
+.page-loading.active>.page-loading-inner{opacity:1}
+.page-loading-inner>span{display:block;font-family:"Inter",sans-serif;font-size:1rem;color:#6f788b}
+.page-spinner{display:inline-block;width:2.75rem;height:2.75rem;margin-bottom:.75rem;background-color:#d7dde2;border-radius:50%;opacity:0;animation:spinner .75s linear infinite}
+@keyframes spinner{0%{transform:scale(0)}50%{opacity:1;transform:none}}
 
-  <!-- Vendor styles -->
-  <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+.dark-text-glow{color:#333;text-shadow:0 0 8px rgba(255,255,255,.9)}
 
-  <!-- Font icons -->
-  <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+/* Botón flotante de WhatsApp */
+.whatsapp-float-container{position:fixed;bottom:25px;right:25px;z-index:99999;display:flex;align-items:center;gap:12px;font-family:'Segoe UI',Arial,sans-serif}
+.whatsapp-tooltip{background:#fff;color:#333;padding:10px 16px;border-radius:25px;font-size:13px;font-weight:600;box-shadow:0 4px 15px rgba(0,0,0,.15);border:1px solid #e0e0e0;animation:floatAnimation 3s ease-in-out infinite;pointer-events:none;white-space:nowrap}
+.whatsapp-float-btn{width:60px;height:60px;background:#25d366;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(37,211,102,.4);transition:all .3s ease;text-decoration:none;animation:pulseWhatsapp 2s infinite}
+.whatsapp-float-btn:hover{transform:scale(1.1) rotate(5deg);background:#20ba5a;box-shadow:0 6px 20px rgba(37,211,102,.6)}
+.whatsapp-float-btn svg{width:32px;height:32px;fill:#fff}
+@keyframes pulseWhatsapp{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@keyframes floatAnimation{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
 
-  <!-- Theme styles + Bootstrap -->
-  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+/* Equipo */
+.team-card-img{width:100%;height:320px;object-fit:cover;object-position:top center;background:#f8f9fa;border:1px solid #eaeaea}
+.team-card-title{min-height:54px;display:flex;align-items:center;justify-content:center;margin-bottom:4px}
 
+@media (max-width:768px){
+  .whatsapp-float-container{bottom:15px;right:15px;gap:0}
+  .whatsapp-tooltip{display:none}
+  .whatsapp-float-btn{width:52px;height:52px}
+  .whatsapp-float-btn svg{width:28px;height:28px}
+}
+@media (max-width:576px){
+  .team-card-img{height:280px}
+  .team-card-title{min-height:auto}
+}
+</style>
 
-
-
-  <!-- Page loading styles -->
-  <style>
-    .page-loading {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-transition: all .4s .2s ease-in-out;
-      transition: all .4s .2s ease-in-out;
-      background-color: #fff;
-      opacity: 0;
-      visibility: hidden;
-      z-index: 9999;
-    }
-
-    [data-bs-theme="dark"] .page-loading {
-      background-color: #121519;
-    }
-
-    .page-loading.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .page-loading-inner {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      -webkit-transition: opacity .2s ease-in-out;
-      transition: opacity .2s ease-in-out;
-      opacity: 0;
-    }
-
-    .page-loading.active>.page-loading-inner {
-      opacity: 1;
-    }
-
-    .page-loading-inner>span {
-      display: block;
-      font-family: "Inter", sans-serif;
-      font-size: 1rem;
-      font-weight: normal;
-      color: #6f788b;
-    }
-
-    [data-bs-theme="dark"] .page-loading-inner>span {
-      color: #fff;
-      opacity: .6;
-    }
-
-    .page-spinner {
-      display: inline-block;
-      width: 2.75rem;
-      height: 2.75rem;
-      margin-bottom: .75rem;
-      vertical-align: text-bottom;
-      background-color: #d7dde2;
-      border-radius: 50%;
-      opacity: 0;
-      -webkit-animation: spinner .75s linear infinite;
-      animation: spinner .75s linear infinite;
-    }
-
-    [data-bs-theme="dark"] .page-spinner {
-      background-color: rgba(255, 255, 255, .25);
-    }
-
-    @-webkit-keyframes spinner {
-      0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-
-      50% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-      }
-    }
-
-    @keyframes spinner {
-      0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-      }
-
-      50% {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-      }
-    }
-
-    .dark-text-glow {
-      color: #333333;
-      /* 0px offset creates an even glow, 8px is the blur, 0.9 is the opacity */
-      text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
-    }
-    .whatsapp-float-container {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 99999;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-family: 'Segoe UI', Arial, sans-serif;
-  }
-
-  .whatsapp-tooltip {
-    background-color: #ffffff;
-    color: #333333;
-    padding: 10px 16px;
-    border-radius: 25px;
-    font-size: 13px;
-    font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    border: 1px solid #e0e0e0;
-    animation: floatAnimation 3s ease-in-out infinite;
-    pointer-events: none;
-    white-space: nowrap;
-  }
-
-  .whatsapp-float-btn {
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    transition: all 0.3s ease;
-    text-decoration: none;
-    position: relative;
-    animation: pulseWhatsapp 2s infinite;
-  }
-
-  .whatsapp-float-btn:hover {
-    transform: scale(1.1) rotate(5deg);
-    background-color: #20ba5a;
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
-  }
-
-  .whatsapp-float-btn svg {
-    width: 32px;
-    height: 32px;
-    fill: #ffffff;
-  }
-  /* Estilos para Alineación Perfecta del Equipo TRINO */
-  .team-card-img {
-    width: 100%;
-    height: 320px; /* Altura fija milimétrica para todas las imágenes */
-    object-fit: cover;
-    object-position: top center; /* Enfoca el rostro en la parte superior */
-    background-color: #f8f9fa;
-    border: 1px solid #eaeaea;
-  }
-
-  .team-card-title {
-    min-height: 54px; /* Alinea los cargos de abajo aunque el nombre tenga 1 o 2 líneas */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4px;
-  }
-
-  /* Ajuste Responsive para Celulares */
-  @media (max-width: 576px) {
-    .team-card-img {
-      height: 280px;
-    }
-    .team-card-title {
-      min-height: auto;
-    }
-  }
-  /* AJUSTES EXCLUSIVOS PARA MÓVILES */
-  @media (max-width: 768px) {
-    .whatsapp-float-container {
-      bottom: 15px;
-      right: 15px;
-      gap: 0;
-    }
-
-    .whatsapp-tooltip {
-      display: none; /* Oculta el texto largo en celulares para no tapar la pantalla */
-    }
-
-    .whatsapp-float-btn {
-      width: 52px;
-      height: 52px;
-    }
-
-    .whatsapp-float-btn svg {
-      width: 28px;
-      height: 28px;
-    }
-  }
-
-  @keyframes pulseWhatsapp {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-  }
-
-  @keyframes floatAnimation {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-  }
-  </style>
-
-  <!-- Page loading scripts -->
-  <script>
-    (function () {
-      window.onload = function () {
-        const preloader = document.querySelector('.page-loading')
-        preloader.classList.remove('active')
-        setTimeout(function () {
-          preloader.remove()
-        }, 1500)
-      }
-    })()
-  </script>
+<script>
+window.addEventListener('load', function () {
+  var p = document.querySelector('.page-loading');
+  if (!p) return;
+  p.classList.remove('active');
+  setTimeout(function () { p.remove(); }, 1500);
+});
+</script>
 </head>
-
-
-<!-- Body -->
 
 <body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5ZXVX33"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5ZXVX33" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Page loading spinner -->
-  <div class="page-loading active">
-    <div class="page-loading-inner">
-      <div class="page-spinner"></div>
-      <span>Cargando...</span>
-    </div>
+<!-- Ícono de check reutilizable -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="chk" viewBox="0 0 24 24">
+    <path d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z"/>
+    <path d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z"/>
+  </symbol>
+</svg>
+
+<div class="page-loading active">
+  <div class="page-loading-inner">
+    <div class="page-spinner"></div>
+    <span>Cargando...</span>
   </div>
+</div>
 
+<main class="page-wrapper">
 
-  <!-- Page wrapper -->
-  <main class="page-wrapper">
+  <!-- Navbar -->
+  <header class="navbar navbar-expand-lg fixed-top" data-bs-theme="light">
+    <div class="container">
+      <a class="navbar-brand pe-sm-3" href="#">
+        <img src="assets/img/landing/trino/logo/logo3.png" width="130" alt="TRINO">
+      </a>
+      <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-lg-inline-flex" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora">
+        <i class="ai-calendar fs-xl me-2 ms-n1"></i>Reserva tu Hora
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse" id="navbarNav" tabindex="-1">
+        <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+          <li class="nav-item"><a class="nav-link" href="#Tratamiento">Tratamiento</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como_funciona">Cómo funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#que_es_obesidad">¿Qué es la obesidad?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quienes_somos">Nuestro equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quienes_pueden_atenderse">¿Puedo atenderme?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto" role="button" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a></li>
+        </ul>
+        <div class="d-lg-none p-3 mt-n3">
+          <a class="btn btn-primary w-100 mb-1" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora">
+            <i class="ai-calendar fs-xl me-2 ms-n1"></i>Reserva tu Hora
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-    <header class="navbar navbar-expand-lg fixed-top" data-bs-theme="light">
-      <div class="container">
-
-        <!-- Navbar brand (Logo) -->
-        <a class="navbar-brand pe-sm-3" href="#">
-          <img src="assets/img/landing/trino/logo/logo3.png" width="130"></img>
-
-
-        </a>
-
-        <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-lg-inline-flex" data-bs-toggle="modal"
-          data-bs-target="#reservarHora" onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
-          <i class="ai-calendar fs-xl me-2 ms-n1"></i>
-          Reserva tu Hora
-        </a>
-
-
-
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar collapse (Main navigation) -->
-        <nav class=" collapse navbar-collapse" id="navbarNav" tabindex="-1">
-
-          <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
-
-            <li class="nav-item">
-              <a class="nav-link" href="#Tratamiento">Tratamiento</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#que_es_obesidad">¿Qué es la obesidad?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quienes_somos">Nuestro equipo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quienes_pueden_atenderse">¿Puedo atenderme?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</a>
-            </li>
-          </ul>
-          <div class="d-lg-none p-3 mt-n3">
-            <a class="btn btn-primary w-100 mb-1" data-bs-toggle="modal" data-bs-target="#reservarHora"
-              onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
-              <i class="ai-calendar fs-xl me-2 ms-n1"></i>
-              Reserva tu Hora
+  <!-- Modal contacto -->
+  <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="contactoTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactoTitulo">Contacto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-sm-flex align-items-center pt-2">
+            <a class="btn btn-icon btn-sm btn-primary rounded-circle mx-2" href="mailto:contacto@trinoonline.cl" aria-label="Enviar correo">
+              <i class="ai-mail"></i>
             </a>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-
-    <!-- Default modal -->
-    <div class="modal fade" id="contacto" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Contacto</h5>
-          </div>
-          <div class="modal-body">
-            <div class="d-sm-flex align-items-center pt-4 mt-2 mt-sm-0">
-              <a class="btn btn-icon btn-sm btn-primary rounded-circle ai-mail mx-2"
-                href="mailto:contacto@trinoonline.cl">
-                <i class=""></i>
-              </a>
-              <p class="nav fs-lg order-sm-1 justify-content-center mb-0">
-                <span class="text-body-secondary">Escríbenos a</span>
-                <a class="nav-link fw-normal p-0 ms-1" href="mailto:contacto@trinoonline.cl"
-                  rel="noopener">contacto@trinoonline.cl </a>
-              </p>
-            </div>
-          </div>
-          <div class="modal-footer flex-column flex-sm-row">
-            <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0"
-              data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hero slider -->
-    <section class="position-relative min-vh-100 py-5" data-bs-theme="light">
-
-      <!-- Background image slider -->
-      <div class="swiper swiper-scale-effect position-absolute top-0 start-0 w-100 h-100" data-swiper-options='{
-          "effect": "fade",
-          "speed": 2000,
-          "autoplay": {
-            "delay": 3000,
-            "disableOnInteraction": false
-          },
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          }
-        }'>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="swiper-slide-cover bg-position-top-center"
-              style="background-image: url(assets/img/landing/trino/hero/01.jpg);"></div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="swiper-slide-cover bg-position-top-center"
-              style="background-image: url(assets/img/landing/trino/hero/02.jpg);"></div>
-          </div>
-        </div>
-        <div class="swiper-pagination mb-4"></div>
-      </div>
-
-      <!-- Content -->
-      <div class="container position-relative z-2 py-lg-3 py-xl-5 my-5">
-        <div class="row pt-md-3 py-xxl-5 my-5">
-          <div class="col py-5 mb-md-4 mb-lg-5">
-            <h1 class="display-5 mb-4 dark-text-glow" style="max-width: 700px;">Tratamiento Médico Integral de la
-              Obesidad</h1>
-            <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">Comienza tu
-              viaje hacia una
-              mejor salud, trabajando con un equipo de profesionales que te ayudarán a cumplir tus objetivos.</p>
-
-            <div class="position-relative d-none d-lg-inline-flex align-items-center" data-bs-toggle="modal"
-              data-bs-target="#reservarHora">
-              <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal"
-                data-bs-target="#reservarHora" onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
-                <i class="ai-calendar"></i>
-              </a>
-              <span class="text-body fs-lg fw-semibold ms-3">Reserva tu Hora</span>
-            </div>
-
-            <div class="d-lg-none" data-bs-toggle="modal" data-bs-target="#reservarHora">
-              <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora"
-                onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
-                <i class="ai-calendar fs-xl me-2 ms-n1"></i>
-                Reserva tu Hora
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Default modal -->
-    <div class="modal fade" id="reservarHora" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title">Agenda tu Hora</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-
-
-            <iframe style="overflow: hidden; border-radius: 10px; margin-bottom: 20px;"
-              src="https://agendamiento.reservo.cl/makereserva/agenda/k06KGpW0t0oSdT156J76XqQ3F7I7S0" width="100%"
-              height="600" frameborder="0"></iframe>
-
-
-          </div>
-          <li class="d-flex align-items-center mb-3">
-
-          </li>
-
-          <div class="modal-footer flex-column flex-sm-row">
-            <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0"
-              data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Features (Advantages) slider -->
-    <section class="pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="Tratamiento">
-      <div class="container pt-2 pt-sm-4 pt-lg-5 mt-md-3 mt-lg-0">
-        <div class="row pb-3 mb-3 mb-lg-4">
-          <div class="col-lg-11 d-sm-flex justify-content-between text-center text-sm-start">
-            <h2 class="h1 mb-sm-0 mx-auto me-sm-4" style="max-width: 440px;">¿En qué consiste el tratamiento?</h2>
-            <p class="pt-2 mb-0 mx-auto" style="max-width: 420px;">Trabajamos en formato online, con un enfoque
-              multidisciplinario y centrado en la persona, basado en los cuatro pilares de la medicina de la obesidad:
+            <p class="nav fs-lg order-sm-1 justify-content-center mb-0">
+              <span class="text-body-secondary">Escríbenos a</span>
+              <a class="nav-link fw-normal p-0 ms-1" href="mailto:contacto@trinoonline.cl" rel="noopener">contacto@trinoonline.cl</a>
             </p>
           </div>
         </div>
-      </div>
-      <div class="container-start pe-0">
-        <div class="swiper" data-swiper-options='{
-            "slidesPerView": "auto",
-            "spaceBetween": 24,
-            "loop": true,
-            "navigation": {
-              "prevEl": "#prev-feature",
-              "nextEl": "#next-feature"
-            }
-          }'>
-          <div class="swiper-wrapper">
-
-            <!-- Item -->
-            <div class="swiper-slide w-auto h-auto">
-              <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
-                <div
-                  class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5"
-                  style="background-image: url(assets/img/landing/trino/features/TerapiaNutricional.jpg);"></div>
-                <div class="card-body text-center">
-                  <i class="ai-fruit h1 fw-normal text-primary d-block mb-4"></i>
-                  <h3>Terapia Nutricional</h3>
-                  <p class="card-text">Queremos que aprendas una nueva manera de alimentarte que puedas disfrutar y
-                    mantener a lo largo de la vida. </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide w-auto h-auto">
-              <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
-                <div
-                  class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5"
-                  style="background-image: url(assets/img/landing/trino/features/ActividadFisica.jpg);"></div>
-                <div class="card-body text-center">
-                  <i class="ai-towel h1 fw-normal text-primary d-block mb-4"></i>
-                  <h3>Actividad Física</h3>
-                  <br>
-                  <p class="card-text">Fundamental para mantener tu cuerpo-mente saludables y preservar tu masa muscular
-                    mientras bajas de peso.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide w-auto h-auto">
-              <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
-                <div
-                  class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5"
-                  style="background-image: url(assets/img/landing/trino/features/TerapiaFarmacologica.jpg);">
-                </div>
-                <div class="card-body text-center">
-                  <i class="ai-capsule h1 fw-normal text-primary d-block mb-4"></i>
-                  <h3>Terapia Farmacológica</h3>
-                  <p class="card-text">Muchas veces indispensable, una gran aliada para conseguir el éxito del
-                    tratamiento.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide w-auto h-auto">
-              <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
-                <div
-                  class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5"
-                  style="background-image: url(assets/img/landing/trino/features/ModificacionConductual.jpg);">
-                </div>
-                <div class="card-body text-center">
-                  <i class="ai-target h1 fw-normal text-primary d-block mb-4"></i>
-                  <h3>Modificación Conductual</h3>
-                  <p class="card-text">Te ayudaremos a lograr los cambios que necesitas, con un fuerte énfasis en tu
-                    salud mental.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-    </section>
-
-
-    <section class="container pt-5 mt-lg-1 mt-xl-4 mt-xxl-5" id="evaluacion_multi">
-
-      <div class="row align-items-center g-0">
-        <div class="col-md-12 text-center text-md-start rounded-5" style="background-color: #f6f9fc;">
-          <div class="py-4 px-4 px-sm-5 pe-md-0 ps-xl-4">
-            <h3 class="h2 pb-2 pb-xl-3">Agenda tu <span class="text-primary">evaluación
-                integral con el equipo</span>. Incluye consulta médica, psicológica y nutricional inicial.</h3>
-            <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora"
-              onclick="return gtag_report_conversion('http://www.trinoonline.cl');">Reserva tu Evaluación Integral</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- Classes (Tabs) -->
-    <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="que_es_obesidad">
-      <h2 class="h1 text-center pt-2 pt-sm-3">¿Qué es la obesidad?</h2>
-      <p class="text-center pb-3 mb-3 mb-lg-4">Es una enfermedad compleja, no una elección personal.</p>
-
-
-      <!-- Tab content -->
-      <div class="tab-content">
-
-        <!-- Beginers -->
-        <div class="tab-pane fade show active" role="tabpanel">
-          <div class="row align-items-lg-center">
-            <div class="col-md-6 pb-4 pb-md-0 mb-2 mb-md-0">
-              <img class="rounded-5" src="assets/img/landing/trino/classes/QueEs.png" alt="Beginners">
-            </div>
-            <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
-              <div class="ps-md-4 ps-lg-0">
-
-                <p class="pb-3 mb-3 mb-xl-4">La obesidad es una enfermedad crónica, neuroconductual, multifactorial,
-                  progresiva y recidivante, por lo que requiere un tratamiento multidisciplinario y a largo plazo.
-                </p>
-                <div class="row row-cols-2 g-4 pb-2 pb-xl-0 mb-4 mb-xl-5">
-                  <div class="col">
-                    <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-                    <h3 class="h6 mb-2">Multifactorial</h3>
-                    <p class="fs-sm mb-0">Con origen en múltiples causas, incluyendo determinantes sociales y
-                      culturales.</p>
-                  </div>
-                  <div class="col">
-                    <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-                    <h3 class="h6 mb-2">Progresiva</h3>
-                    <p class="fs-sm mb-0">Aumenta con el paso del tiempo si no se trata.</p>
-                  </div>
-                  <div class="col">
-                    <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-                    <h3 class="h6 mb-2">Recidivante</h3>
-                    <p class="fs-sm mb-0">Regresa al suspender el tratamiento integral.</p>
-                  </div>
-                  <div class="col">
-                    <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
-                    <h3 class="h6 mb-2">Neuroconductual</h3>
-                    <p class="fs-sm mb-0">Involucra centros cerebrales de regulación del peso corporal y la conducta.
-                    </p>
-                  </div>
-                </div>
-                <a class="btn btn-primary w-100 w-sm-auto" data-bs-toggle="modal" data-bs-target="#reservarHora"
-                  onclick="return gtag_report_conversion('http://www.trinoonline.cl');">Reserva tu Hora</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-   <!-- Trainers (Grid ALINEADA) -->
-    <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="quienes_somos">
-      <h2 class="h1 text-center pt-2 pt-sm-4 pt-lg-5 pb-2 mb-3 mb-lg-4 mt-md-3 mt-lg-0">Nuestro equipo</h2>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 align-items-stretch">
-        
-        <!-- Dra. Perla Letelier -->
-        <div class="col text-center pt-2 d-flex flex-column">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#PerlaLetelier">
-            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/01.png" alt="Dra. Perla Letelier">
-            <div class="team-card-title">
-              <h3 class="h5 mb-0">Dra. Perla Letelier</h3>
-            </div>
-            <p class="mb-0 text-body-secondary fs-sm">Psiquiatra - Medicina de la Obesidad</p>
-          </a>
-        </div>
-
-        <!-- Ps. Camila Paz Contreras -->
-        <div class="col text-center pt-2 d-flex flex-column">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#Paola">
-            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/02.png" alt="Ps. Camila Paz Contreras">
-            <div class="team-card-title">
-              <h3 class="h5 mb-0">Ps. Camila Paz Contreras</h3>
-            </div>
-            <p class="mb-0 text-body-secondary fs-sm">Terapeuta Conducta Alimentaria</p>
-          </a>
-        </div>
-
-        <!-- Nut. Claudia Vega Soto -->
-        <div class="col text-center pt-2 d-flex flex-column">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#ClaudiaVega">
-            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/04.png" alt="Nut. Claudia Vega Soto">
-            <div class="team-card-title">
-              <h3 class="h5 mb-0">Nut. Claudia Vega Soto</h3>
-            </div>
-            <p class="mb-0 text-body-secondary fs-sm">Nutricionista</p>
-          </a>
-        </div>
-        
-        <!-- Nta. María de los Ángeles Rosales -->
-        <div class="col text-center pt-2 d-flex flex-column">
-          <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" data-bs-toggle="modal" data-bs-target="#Maangeles">
-            <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/03.png" alt="Nta. María de los Ángeles Rosales">
-            <div class="team-card-title">
-              <h3 class="h5 mb-0">Nut. María de los Ángeles Rosales</h3>
-            </div>
-            <p class="mb-0 text-body-secondary fs-sm">Nutricionista</p>
-          </a>
-        </div>
-
-        
-
-      </div>
-    </section>
-
-
-    <!-- Para poner modals -->
-
-    <!-- modal PERLA LETELIER -->
-    <div class="modal fade" id="PerlaLetelier" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Dra. Perla Letelier </h4>
-            <div class="position-relative d-inline-flex align-items-center" data-bs-toggle="modal"
-              data-bs-target="#reservarHora">
-              <div class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" data-bs-toggle="modal"
-                data-bs-target="#reservarHora" onclick="return gtag_report_conversion('http://www.trinoonline.cl');">
-                <i class="ai-calendar"></i>
-              </div><span class="text-body fs-lg fw-semibold ms-3">Agenda</span>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="center"><img class="rounded-5" src="assets/img/landing/trino/trainers/01.png"
-                style="height: 150px;" alt="Dra. Perla Letelier"></div>
-            <div class="pt-4 mt-lg-2">
-              <ul>
-                <li>Médica Cirujana Pontificia Universidad Católica.</li>
-                <li>Psiquiatra Adultos Conacem.</li>
-                <li>International Board of Lifestyle Medicine.</li>
-                <li>Harvard Blackburn Obesity course 2024 y 2026.</li>
-                <li>Obesity Medicine Association certificate.</li>
-              </ul>
-            </div>
-            <figure>
-              <blockquote class="blockquote">
-                <p>Quiero crear un espacio de calidez, respeto y total confianza para sostener tu proceso de recuperación. Puede ser un camino difícil, pero también muy gratificante y deseo estar ahí para acompañarte y guiarte en cada etapa. Hay que comprometerse, seguir adelante aun cuando haya momentos difíciles, porque la obesidad requiere un tratamiento a largo plazo y tan serio como el que merece cualquier otra enfermedad crónica. Me preocuparé de que tu tratamiento sea a tu medida, según tus tiempos, necesidades y preferencias, y de que puedas contar con mi apoyo cada vez que lo necesites</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">Perla</figcaption>
-            </figure>
-          </div>
-          <div class="modal-footer flex-column flex-sm-row">
-            <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0"
-              data-bs-dismiss="modal">Cerrar</button>
-          </div>
+        <div class="modal-footer flex-column flex-sm-row">
+          <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
+  </div>
 
-
-    <!-- modal Camila  -->
-    <div class="modal fade" id="Paola" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Ps. Camila Paz Contreras</h4>
-            <div class="position-relative d-inline-flex align-items-center">
-              <a class="btn btn-icon btn-lg btn-primary rounded-circle" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Ps.%20Camila%20Paz%20Contreras">
-                <i class="ai-mail"></i>
-              </a>
-              <a class="text-body fs-lg fw-semibold ms-3 text-decoration-none" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Ps.%20Camila%20Paz%20Contreras">Contacto</a>
-            </div>
-          </div>
-          <!-- EDITAR AQUI CONTENIDO -->
-          <div class="modal-body">
-            <div class="center"><img class="rounded-5" src="assets/img/landing/trino/trainers/02.png"
-                style="height: 150px;" alt="Ps. Camila Paz Contreras"></div>
-            <div class="pt-4 mt-lg-2">
-
-              <ul>
-                <li>Psicóloga Universidad de la Frontera.</li>
-                <li>Magíster en intervención psicosocial Universidad de Barcelona.</li>
-                <li>Docente clínica Universidad de Viña del Mar.</li>
-                <li>Psicoterapeuta especializada en Binge Eating Disorder (trastorno por atracón), Centro de estudios
-                  Sistémicos.</li>
-
-              </ul>
-            </div>
-            <figure>
-              <blockquote class="blockquote">
-                <p>Mi compromiso es acompañar a cada persona desde una perspectiva no pesocéntrica y con foco en la
-                  salud integral y el respeto por la diversidad corporal. A través de la experiencia profesional sé que
-                  la capacidad de transformación de las personas es real y trabajo para devolverles el poder sobre sus
-                  propias historias, alejándolas de los ciclos de culpa y restricción y acercándolas a una vida plena y
-                  auténtica.
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer">Camila</figcaption>
-            </figure>
-          </div>
-          <div class="modal-footer flex-column flex-sm-row">
-            <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0"
-              data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
+  <!-- Hero -->
+  <section class="position-relative min-vh-100 py-5" data-bs-theme="light">
+    <div class="swiper swiper-scale-effect position-absolute top-0 start-0 w-100 h-100" data-swiper-options='{
+        "effect": "fade",
+        "speed": 2000,
+        "autoplay": {"delay": 3000, "disableOnInteraction": false},
+        "pagination": {"el": ".swiper-pagination", "clickable": true}
+      }'>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><div class="swiper-slide-cover bg-position-top-center" style="background-image: url(assets/img/landing/trino/hero/01.jpg);"></div></div>
+        <div class="swiper-slide"><div class="swiper-slide-cover bg-position-top-center" style="background-image: url(assets/img/landing/trino/hero/02.jpg);"></div></div>
       </div>
+      <div class="swiper-pagination mb-4"></div>
     </div>
 
-    <!-- modal MAANGELES  -->
-    <div class="modal fade" id="Maangeles" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Nut. María de los Ángeles Rosales</h4>
-            <div class="position-relative d-inline-flex align-items-center">
-              <a class="btn btn-icon btn-lg btn-primary rounded-circle" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nta.%20Maria%20de%20los%20Angeles%20Rosales">
-                <i class="ai-mail"></i>
-              </a>
-              <a class="text-body fs-lg fw-semibold ms-3 text-decoration-none" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nta.%20Maria%20de%20los%20Angeles%20Rosales">Contacto</a>
-            </div>
-          </div>
-          <!-- EDITAR AQUI CONTENIDO -->
-          <div class="modal-body">
-            <div class="center"><img class="rounded-5" src="assets/img/landing/trino/trainers/03.png"
-                style="height: 150px;" alt="Nta. María de los Ángeles Rosales"></div>
-            <div class="pt-4 mt-lg-2">
+    <div class="container position-relative z-2 py-lg-3 py-xl-5 my-5">
+      <div class="row pt-md-3 py-xxl-5 my-5">
+        <div class="col py-5 mb-md-4 mb-lg-5">
+          <h1 class="display-5 mb-4 dark-text-glow" style="max-width: 700px;">Tratamiento Médico Integral de la Obesidad</h1>
+          <p class="d-block text-body fs-xl pb-2 mb-4 mb-md-5" style="max-width: 500px;">Comienza tu viaje hacia una mejor salud, trabajando con un equipo de profesionales que te ayudarán a cumplir tus objetivos.</p>
 
-              <ul>
-
-                <li>Licenciada en Nutrición Universidad del Desarrollo.</li>
-                <li>Diplomada en Trastornos de la Conducta Alimentaria, SETA Chile.</li>
-                <li>Diplomada en Alto Rendimiento Deportivo, Universidad del Desarrollo.</li>
-                <li>Estudiante de Psicología Universidad San Sebastián.</li>
-              </ul>
-            </div>
-            <figure>
-              <blockquote class="blockquote">
-                <p>Te acompaño en el camino hacia una alimentación más consciente y equilibrada, ayudándote a comprender
-                  y redefinir la relación que tienes con la comida. A través de un enfoque personalizado trabajaremos en
-                  cambiar hábitos para que puedas alcanzar tus objetivos de manera sostenible.
-                </p>
-              </blockquote>
-              <figcaption class="blockquote-footer">Ángeles</figcaption>
-            </figure>
-          </div>
-          <div class="modal-footer flex-column flex-sm-row">
-            <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0"
-              data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- modal CLAUDIA VEGA -->
-    <div class="modal fade" id="ClaudiaVega" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Nut. Claudia Vega Soto</h4>
-            <div class="position-relative d-inline-flex align-items-center">
-              <a class="btn btn-icon btn-lg btn-primary rounded-circle" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nut.%20Claudia%20Vega%20Soto">
-                <i class="ai-mail"></i>
-              </a>
-              <a class="text-body fs-lg fw-semibold ms-3 text-decoration-none" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nut.%20Claudia%20Vega%20Soto">Contacto</a>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="text-center">
-              <img class="rounded-5" src="assets/img/landing/trino/trainers/04.png" style="height: 150px;" alt="Nut. Claudia Vega Soto">
-            </div>
-            <div class="pt-4 mt-lg-2">
-              <ul>
-                <li>Nutricionista, Universidad de Valparaíso.</li>
-                <li>Magíster en Ciencias Biológicas mención Nutrición, Universidad de Chile.</li>
-                <li>Estudiante de doctorado en Nutrición y Alimentos, Universidad de Chile.</li>
-                <li>Docente de la Universidad de Valparaíso.</li>
-              </ul>
-            </div>
-            <figure>
-              <blockquote class="blockquote">
-                <p>Mi propósito es trabajar a la par contigo transformando la ciencia de la nutrición en herramientas sencillas, prácticas y aplicables a tu día a día. Abordo el tratamiento de la obesidad desde la evidencia clínica, entendiendo que cada cuerpo posee una complejidad metabólica única y que al mismo tiempo, detrás de cada biología hay una persona con una historia particular. Por eso, mi compromiso es acompañarte con cercanía, construyendo hábitos sostenibles que te devuelvan el bienestar y el control de tu salud.</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">Claudia</figcaption>
-            </figure>
-          </div>
-          <div class="modal-footer flex-column flex-sm-row">
-            <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pricing -->
-    <section class="pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="quienes_pueden_atenderse">
-
-      <div class="container pt-1 pt-sm-4 pt-lg-5 mt-md-2">
-        <div class="row">
-
-          <!-- Sticky sidebar -->
-          <div class="col-md-12 col-xl-12 mb-2 mb-md-0">
-            <div class="position-sticky top-0">
-              <h2 class="h1 pb-1 pb-lg-3">¿Quiénes pueden atenderse en TRINO?</h2>
-            </div>
-          </div>
-
-          <li class="d-flex align-items-center mb-3">
-            <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" viewBox="0 0 24 24"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z">
-              </path>
-              <path
-                d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z">
-              </path>
-            </svg>
-            <div class="ps-2 ms-1">
-              <div class="text-nav fw-medium">Personas mayores de 18 años, que busquen atención online.</div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-3">
-            <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" viewBox="0 0 24 24"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z">
-              </path>
-              <path
-                d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z">
-              </path>
-            </svg>
-            <div class="ps-2 ms-1">
-              <div class="text-nav fw-medium">Personas con sobrepeso u obesidad que deseen bajar de peso de manera
-                duradera, segura y saludable.</div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-3">
-            <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" viewBox="0 0 24 24"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z">
-              </path>
-              <path
-                d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z">
-              </path>
-            </svg>
-            <div class="ps-2 ms-1">
-              <div class="text-nav fw-medium">Personas con obesidad que no cumplan criterios para un tratamiento
-                quirúrgico o que prefieran un manejo sin cirugía.</div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-3">
-            <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" viewBox="0 0 24 24"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z">
-              </path>
-              <path
-                d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z">
-              </path>
-            </svg>
-            <div class="ps-2 ms-1">
-              <div class="text-nav fw-medium">Personas que después de una cirugía bariátrica estén recuperando peso.
-              </div>
-            </div>
-          </li>
-          <li class="d-flex align-items-center mb-3">
-            <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" viewBox="0 0 24 24"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z">
-              </path>
-              <path
-                d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z">
-              </path>
-            </svg>
-            <div class="ps-2 ms-1">
-              <div class="text-nav fw-medium">Personas que quieran mejorar sus conductas alimentarias de sobreingesta,
-                por ejemplo atracones o alimentación nocturna.</div>
-            </div>
-          </li>
-
-          <li class="d-flex align-items-center mb-3">
-            <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" viewBox="0 0 24 24"
-              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 24C4.935 24 0 19.065 0 13C0 6.935 4.935 2 11 2C13.109 2 15.161 2.601 16.934 3.739C17.166 3.888 17.234 4.197 17.085 4.43C16.935 4.662 16.626 4.73 16.394 4.581C14.782 3.546 12.917 3 11 3C5.486 3 1 7.486 1 13C1 18.514 5.486 23 11 23C16.514 23 21 18.514 21 13C21 12.67 20.984 12.345 20.953 12.024C20.926 11.749 21.127 11.504 21.402 11.478C21.682 11.455 21.922 11.652 21.948 11.927C21.982 12.28 22 12.638 22 13C22 19.065 17.065 24 11 24Z">
-              </path>
-              <path
-                d="M12.5002 15.2502C12.3723 15.2502 12.2442 15.2012 12.1462 15.1042L7.64625 10.6042C7.45125 10.4092 7.45125 10.0922 7.64625 9.89725C7.84125 9.70225 8.15825 9.70225 8.35325 9.89725L12.4992 14.0432L23.1462 3.39625C23.3412 3.20125 23.6583 3.20125 23.8533 3.39625C24.0483 3.59125 24.0483 3.90825 23.8533 4.10325L12.8532 15.1032C12.7562 15.2012 12.6282 15.2502 12.5002 15.2502Z">
-              </path>
-            </svg>
-            <div class="ps-2 ms-1">
-              <div class="text-nav fw-medium">Personas que deseen prevenir la Obesidad.</div>
-            </div>
-          </li>
-
-        </div>
-      </div>
-      </div>
-      </div>
-    </section>
-  </main>
-
-
-  <!-- Footer -->
-  <footer class="footer bg-secondary py-5 mt-5">
-    <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
-      <div class="border-bottom text-center pb-4">
-        <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="#">
-          <img src="assets/img/landing/trino/logo/logo3.png" width="200"></img>
-        </a>
-        <ul class="nav justify-content-right py-1 pb-sm-2">
-          <li class="nav-item">
-            <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle mx-2"
-              href="https://www.instagram.com/dra.perlaletelier_trino" aria-label="Instagram">
-              <i class="ai-instagram"></i>
+          <div class="position-relative d-none d-lg-inline-flex align-items-center">
+            <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora" aria-label="Reserva tu hora">
+              <i class="ai-calendar"></i>
             </a>
-          </li>
+            <span class="text-body fs-lg fw-semibold ms-3">Reserva tu Hora</span>
+          </div>
 
-        </ul>
-
-      </div>
-      <div class="d-sm-flex align-items-right justify-content-between pt-4 mt-2 mt-sm-0">
-        <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
-          <span class="text-body-secondary">Escríbenos a</span>
-          <a class="nav-link fw-normal p-0 ms-1" href="mailto:contacto@trinoonline.cl"
-            rel="noopener">contacto@trinoonline.cl </a>
-        </p>
-        <p class="nav fs-sm order-sm-1 justify-content-right mb-0">
-          <span class="text-body-secondary">&copy; 2026 TRINO. Todos los derechos reservados.</span>
-        </p>
+          <div class="d-lg-none">
+            <a class="btn btn-primary w-100 w-sm-auto" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora">
+              <i class="ai-calendar fs-xl me-2 ms-n1"></i>Reserva tu Hora
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
+  <!-- Modal agenda (el iframe de Reservo se carga al abrir) -->
+  <div class="modal fade" id="reservarHora" tabindex="-1" role="dialog" aria-labelledby="reservarTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="reservarTitulo">Agenda tu Hora</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <iframe id="reservoFrame"
+            data-src="https://agendamiento.reservo.cl/makereserva/agenda/k06KGpW0t0oSdT156J76XqQ3F7I7S0"
+            title="Agenda tu hora en TRINO"
+            style="overflow: hidden; border-radius: 10px; margin-bottom: 20px;"
+            width="100%" height="600" frameborder="0"></iframe>
+        </div>
+        <div class="modal-footer flex-column flex-sm-row">
+          <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Back to top button -->
-  <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
-    <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10">
-      </circle>
-    </svg>
-    <i class="ai-arrow-up"></i>
-  </a>
+  <!-- Tratamiento -->
+  <section class="pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="Tratamiento">
+    <div class="container pt-2 pt-sm-4 pt-lg-5 mt-md-3 mt-lg-0">
+      <div class="row pb-3 mb-3 mb-lg-4">
+        <div class="col-lg-11 d-sm-flex justify-content-between text-center text-sm-start">
+          <h2 class="h1 mb-sm-0 mx-auto me-sm-4" style="max-width: 440px;">¿En qué consiste el tratamiento?</h2>
+          <p class="pt-2 mb-0 mx-auto" style="max-width: 420px;">Trabajamos en formato online, con un enfoque multidisciplinario y centrado en la persona, basado en los cuatro pilares de la medicina de la obesidad:</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-start pe-0">
+      <div class="swiper" data-swiper-options='{
+          "slidesPerView": "auto",
+          "spaceBetween": 24,
+          "loop": true,
+          "navigation": {"prevEl": "#prev-feature", "nextEl": "#next-feature"}
+        }'>
+        <div class="swiper-wrapper">
 
+          <div class="swiper-slide w-auto h-auto">
+            <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
+              <div class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5" style="background-image: url(assets/img/landing/trino/features/TerapiaNutricional.jpg);"></div>
+              <div class="card-body text-center">
+                <i class="ai-fruit h1 fw-normal text-primary d-block mb-4"></i>
+                <h3>Terapia Nutricional</h3>
+                <p class="card-text">Queremos que aprendas una nueva manera de alimentarte que puedas disfrutar y mantener a lo largo de la vida.</p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Vendor scripts: JS libraries and plugins -->
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
-  <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
-  <script src="assets/vendor/@fullcalendar/core/index.global.min.js"></script>
-  <script src="assets/vendor/@fullcalendar/daygrid/index.global.min.js"></script>
-  <script src="assets/vendor/@fullcalendar/list/index.global.min.js"></script>
-  <script src="assets/vendor/@fullcalendar/timegrid/index.global.min.js"></script>
-  <script src="assets/vendor/@fullcalendar/bootstrap5/index.global.min.js"></script>
+          <div class="swiper-slide w-auto h-auto">
+            <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
+              <div class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5" style="background-image: url(assets/img/landing/trino/features/ActividadFisica.jpg);"></div>
+              <div class="card-body text-center">
+                <i class="ai-towel h1 fw-normal text-primary d-block mb-4"></i>
+                <h3>Actividad Física</h3>
+                <p class="card-text">Fundamental para mantener tu cuerpo-mente saludables y preservar tu masa muscular mientras bajas de peso.</p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Bootstrap + Theme scripts -->
-  <script src="assets/js/theme.min.js"></script>
+          <div class="swiper-slide w-auto h-auto">
+            <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
+              <div class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5" style="background-image: url(assets/img/landing/trino/features/TerapiaFarmacologica.jpg);"></div>
+              <div class="card-body text-center">
+                <i class="ai-capsule h1 fw-normal text-primary d-block mb-4"></i>
+                <h3>Terapia Farmacológica</h3>
+                <p class="card-text">Muchas veces indispensable, una gran aliada para conseguir el éxito del tratamiento.</p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Script para cerrar el navBar cuando uno hace click -->
-  <script type="text/javascript">
-    const menuToggle = document.getElementById('navbarNav')
-    const navLinks = menuToggle.querySelectorAll('.nav-item')
-    const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
-    navLinks.forEach((l) => {
-      l.addEventListener('click', () => {
-        if (window.innerWidth < 992) { bsCollapse.toggle() }
-      })
-    })
-  </script>
-<!-- Boton Flotante de WhatsApp TRINO -->
+          <div class="swiper-slide w-auto h-auto">
+            <div class="card border-0 bg-secondary card-hover h-100 py-4" style="max-width: 306px;">
+              <div class="opacity-0 position-absolute top-0 start-0 w-100 h-100 bg-size-cover bg-position-center rounded-5" style="background-image: url(assets/img/landing/trino/features/ModificacionConductual.jpg);"></div>
+              <div class="card-body text-center">
+                <i class="ai-target h1 fw-normal text-primary d-block mb-4"></i>
+                <h3>Modificación Conductual</h3>
+                <p class="card-text">Te ayudaremos a lograr los cambios que necesitas, con un fuerte énfasis en tu salud mental.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="como_funciona">
+    <h2 class="h1 text-center pb-2 mb-3">¿Cómo funciona?</h2>
+    <p class="text-center pb-3 mb-3 mb-lg-4 mx-auto" style="max-width: 640px;">Un tratamiento a tu medida, según tus tiempos, necesidades y preferencias. Cuidamos especialmente tu salud mental, porque es clave para lograr y mantener tus resultados.</p>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+      <div class="col text-center">
+        <span class="h1 text-primary d-block mb-2">1</span>
+        <h3 class="h5">Reserva tu evaluación</h3>
+        <p class="fs-sm mb-0">Agenda online, con el equipo completo o comenzando con la doctora, según tu preferencia.</p>
+      </div>
+      <div class="col text-center">
+        <span class="h1 text-primary d-block mb-2">2</span>
+        <h3 class="h5">Evaluación exhaustiva</h3>
+        <p class="fs-sm mb-0">Conocemos tu caso en detalle: salud física, emocional y hábitos.</p>
+      </div>
+      <div class="col text-center">
+        <span class="h1 text-primary d-block mb-2">3</span>
+        <h3 class="h5">Plan personalizado</h3>
+        <p class="fs-sm mb-0">Diseñamos tu plan integral con herramientas farmacológicas, conductuales y de estilo de vida.</p>
+      </div>
+      <div class="col text-center">
+        <span class="h1 text-primary d-block mb-2">4</span>
+        <h3 class="h5">Seguimiento cercano</h3>
+        <p class="fs-sm mb-0">Te acompañamos en tu proceso para que mantengas los logros a largo plazo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evaluación integral -->
+  <section class="container pt-5 mt-lg-1 mt-xl-4 mt-xxl-5" id="evaluacion_multi">
+    <div class="row align-items-center g-0">
+      <div class="col-md-12 text-center text-md-start rounded-5" style="background-color: #f6f9fc;">
+        <div class="py-4 px-4 px-sm-5 pe-md-0 ps-xl-4">
+          <h3 class="h2 pb-2 pb-xl-3">Agenda tu <span class="text-primary">evaluación integral con el equipo</span>. Incluye consulta médica, psicológica y nutricional inicial.</h3>
+          <a class="btn btn-primary w-100 w-sm-auto" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora">Reserva tu Evaluación Integral</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ¿Qué es la obesidad? -->
+  <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="que_es_obesidad">
+    <h2 class="h1 text-center pt-2 pt-sm-3">¿Qué es la obesidad?</h2>
+    <p class="text-center pb-3 mb-3 mb-lg-4">Es una enfermedad compleja, no una elección personal.</p>
+    <div class="row align-items-lg-center">
+      <div class="col-md-6 pb-4 pb-md-0 mb-2 mb-md-0">
+        <img class="rounded-5" src="assets/img/landing/trino/classes/QueEs.png" alt="Tratamiento médico integral de la obesidad" loading="lazy">
+      </div>
+      <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
+        <div class="ps-md-4 ps-lg-0">
+          <p class="pb-3 mb-3 mb-xl-4">La obesidad es una enfermedad crónica, neuroconductual, multifactorial, progresiva y recidivante, por lo que requiere un tratamiento multidisciplinario y a largo plazo.</p>
+          <div class="row row-cols-2 g-4 pb-2 pb-xl-0 mb-4 mb-xl-5">
+            <div class="col">
+              <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
+              <h3 class="h6 mb-2">Multifactorial</h3>
+              <p class="fs-sm mb-0">Con origen en múltiples causas, incluyendo determinantes sociales y culturales.</p>
+            </div>
+            <div class="col">
+              <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
+              <h3 class="h6 mb-2">Progresiva</h3>
+              <p class="fs-sm mb-0">Aumenta con el paso del tiempo si no se trata.</p>
+            </div>
+            <div class="col">
+              <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
+              <h3 class="h6 mb-2">Recidivante</h3>
+              <p class="fs-sm mb-0">Regresa al suspender el tratamiento integral.</p>
+            </div>
+            <div class="col">
+              <i class="ai-pin d-block h2 text-primary fw-normal pb-2 mb-1"></i>
+              <h3 class="h6 mb-2">Neuroconductual</h3>
+              <p class="fs-sm mb-0">Involucra centros cerebrales de regulación del peso corporal y la conducta.</p>
+            </div>
+          </div>
+          <a class="btn btn-primary w-100 w-sm-auto" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora">Reserva tu Hora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section class="container pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="quienes_somos">
+    <h2 class="h1 text-center pt-2 pt-sm-4 pt-lg-5 pb-2 mb-3 mb-lg-4 mt-md-3 mt-lg-0">Nuestro equipo</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 align-items-stretch">
+
+      <div class="col text-center pt-2 d-flex flex-column">
+        <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" href="#PerlaLetelier" role="button" data-bs-toggle="modal" data-bs-target="#PerlaLetelier">
+          <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/01.png" alt="Dra. Perla Letelier" loading="lazy">
+          <div class="team-card-title"><h3 class="h5 mb-0">Dra. Perla Letelier</h3></div>
+          <p class="mb-0 text-body-secondary fs-sm">Psiquiatra - Medicina de la Obesidad</p>
+        </a>
+      </div>
+
+      <div class="col text-center pt-2 d-flex flex-column">
+        <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" href="#CamilaPaz" role="button" data-bs-toggle="modal" data-bs-target="#CamilaPaz">
+          <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/02.png" alt="Ps. Camila Paz Contreras" loading="lazy">
+          <div class="team-card-title"><h3 class="h5 mb-0">Ps. Camila Paz Contreras</h3></div>
+          <p class="mb-0 text-body-secondary fs-sm">Terapeuta Conducta Alimentaria</p>
+        </a>
+      </div>
+
+      <div class="col text-center pt-2 d-flex flex-column">
+        <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" href="#ClaudiaVega" role="button" data-bs-toggle="modal" data-bs-target="#ClaudiaVega">
+          <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/04.png" alt="Nut. Claudia Vega Soto" loading="lazy">
+          <div class="team-card-title"><h3 class="h5 mb-0">Nut. Claudia Vega Soto</h3></div>
+          <p class="mb-0 text-body-secondary fs-sm">Nutricionista</p>
+        </a>
+      </div>
+
+      <div class="col text-center pt-2 d-flex flex-column">
+        <a class="card-hover card-lifted d-inline-block text-decoration-none w-100 h-100" href="#Maangeles" role="button" data-bs-toggle="modal" data-bs-target="#Maangeles">
+          <img class="card-lifted d-block rounded-5 mb-3 team-card-img" src="assets/img/landing/trino/trainers/03.png" alt="Nut. María de los Ángeles Rosales" loading="lazy">
+          <div class="team-card-title"><h3 class="h5 mb-0">Nut. María de los Ángeles Rosales</h3></div>
+          <p class="mb-0 text-body-secondary fs-sm">Nutricionista</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal Dra. Perla Letelier -->
+  <div class="modal fade" id="PerlaLetelier" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Dra. Perla Letelier</h4>
+          <div class="position-relative d-inline-flex align-items-center">
+            <a class="btn btn-icon btn-lg btn-primary rounded-circle stretched-link" href="#reservarHora" role="button" data-bs-toggle="modal" data-bs-target="#reservarHora" aria-label="Agendar">
+              <i class="ai-calendar"></i>
+            </a>
+            <span class="text-body fs-lg fw-semibold ms-3">Agenda</span>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-center"><img class="rounded-5" src="assets/img/landing/trino/trainers/01.png" style="height: 150px;" alt="Dra. Perla Letelier"></div>
+          <div class="pt-4 mt-lg-2">
+            <ul>
+              <li>Médica Cirujana Pontificia Universidad Católica.</li>
+              <li>Psiquiatra Adultos Conacem.</li>
+              <li>International Board of Lifestyle Medicine.</li>
+              <li>Harvard Blackburn Obesity course 2024 y 2026.</li>
+              <li>Obesity Medicine Association certificate.</li>
+            </ul>
+          </div>
+          <figure>
+            <blockquote class="blockquote">
+              <p>Quiero crear un espacio de calidez, respeto y total confianza para sostener tu proceso de recuperación. Puede ser un camino difícil, pero también muy gratificante y deseo estar ahí para acompañarte y guiarte en cada etapa. Hay que comprometerse, seguir adelante aun cuando haya momentos difíciles, porque la obesidad requiere un tratamiento a largo plazo y tan serio como el que merece cualquier otra enfermedad crónica. Me preocuparé de que tu tratamiento sea a tu medida, según tus tiempos, necesidades y preferencias, y de que puedas contar con mi apoyo cada vez que lo necesites.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Perla</figcaption>
+          </figure>
+        </div>
+        <div class="modal-footer flex-column flex-sm-row">
+          <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Ps. Camila Paz Contreras -->
+  <div class="modal fade" id="CamilaPaz" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Ps. Camila Paz Contreras</h4>
+          <div class="position-relative d-inline-flex align-items-center">
+            <a class="btn btn-icon btn-lg btn-primary rounded-circle" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Ps.%20Camila%20Paz%20Contreras" aria-label="Enviar correo"><i class="ai-mail"></i></a>
+            <a class="text-body fs-lg fw-semibold ms-3 text-decoration-none" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Ps.%20Camila%20Paz%20Contreras">Contacto</a>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-center"><img class="rounded-5" src="assets/img/landing/trino/trainers/02.png" style="height: 150px;" alt="Ps. Camila Paz Contreras"></div>
+          <div class="pt-4 mt-lg-2">
+            <ul>
+              <li>Psicóloga Universidad de la Frontera.</li>
+              <li>Magíster en intervención psicosocial Universidad de Barcelona.</li>
+              <li>Docente clínica Universidad de Viña del Mar.</li>
+              <li>Psicoterapeuta especializada en Binge Eating Disorder (trastorno por atracón), Centro de estudios Sistémicos.</li>
+            </ul>
+          </div>
+          <figure>
+            <blockquote class="blockquote">
+              <p>Mi compromiso es acompañar a cada persona desde una perspectiva no pesocéntrica y con foco en la salud integral y el respeto por la diversidad corporal. A través de la experiencia profesional sé que la capacidad de transformación de las personas es real y trabajo para devolverles el poder sobre sus propias historias, alejándolas de los ciclos de culpa y restricción y acercándolas a una vida plena y auténtica.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Camila</figcaption>
+          </figure>
+        </div>
+        <div class="modal-footer flex-column flex-sm-row">
+          <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Nut. María de los Ángeles Rosales -->
+  <div class="modal fade" id="Maangeles" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Nut. María de los Ángeles Rosales</h4>
+          <div class="position-relative d-inline-flex align-items-center">
+            <a class="btn btn-icon btn-lg btn-primary rounded-circle" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nut.%20Maria%20de%20los%20Angeles%20Rosales" aria-label="Enviar correo"><i class="ai-mail"></i></a>
+            <a class="text-body fs-lg fw-semibold ms-3 text-decoration-none" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nut.%20Maria%20de%20los%20Angeles%20Rosales">Contacto</a>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-center"><img class="rounded-5" src="assets/img/landing/trino/trainers/03.png" style="height: 150px;" alt="Nut. María de los Ángeles Rosales"></div>
+          <div class="pt-4 mt-lg-2">
+            <ul>
+              <li>Licenciada en Nutrición Universidad del Desarrollo.</li>
+              <li>Diplomada en Trastornos de la Conducta Alimentaria, SETA Chile.</li>
+              <li>Diplomada en Alto Rendimiento Deportivo, Universidad del Desarrollo.</li>
+              <li>Estudiante de Psicología Universidad San Sebastián.</li>
+            </ul>
+          </div>
+          <figure>
+            <blockquote class="blockquote">
+              <p>Te acompaño en el camino hacia una alimentación más consciente y equilibrada, ayudándote a comprender y redefinir la relación que tienes con la comida. A través de un enfoque personalizado trabajaremos en cambiar hábitos para que puedas alcanzar tus objetivos de manera sostenible.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Ángeles</figcaption>
+          </figure>
+        </div>
+        <div class="modal-footer flex-column flex-sm-row">
+          <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Nut. Claudia Vega Soto -->
+  <div class="modal fade" id="ClaudiaVega" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Nut. Claudia Vega Soto</h4>
+          <div class="position-relative d-inline-flex align-items-center">
+            <a class="btn btn-icon btn-lg btn-primary rounded-circle" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nut.%20Claudia%20Vega%20Soto" aria-label="Enviar correo"><i class="ai-mail"></i></a>
+            <a class="text-body fs-lg fw-semibold ms-3 text-decoration-none" href="mailto:contacto@trinoonline.cl?subject=Consulta%20con%20Nut.%20Claudia%20Vega%20Soto">Contacto</a>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="text-center"><img class="rounded-5" src="assets/img/landing/trino/trainers/04.png" style="height: 150px;" alt="Nut. Claudia Vega Soto"></div>
+          <div class="pt-4 mt-lg-2">
+            <ul>
+              <li>Nutricionista, Universidad de Valparaíso.</li>
+              <li>Magíster en Ciencias Biológicas mención Nutrición, Universidad de Chile.</li>
+              <li>Estudiante de doctorado en Nutrición y Alimentos, Universidad de Chile.</li>
+              <li>Docente de la Universidad de Valparaíso.</li>
+            </ul>
+          </div>
+          <figure>
+            <blockquote class="blockquote">
+              <p>Mi propósito es trabajar a la par contigo transformando la ciencia de la nutrición en herramientas sencillas, prácticas y aplicables a tu día a día. Abordo el tratamiento de la obesidad desde la evidencia clínica, entendiendo que cada cuerpo posee una complejidad metabólica única y que al mismo tiempo, detrás de cada biología hay una persona con una historia particular. Por eso, mi compromiso es acompañarte con cercanía, construyendo hábitos sostenibles que te devuelvan el bienestar y el control de tu salud.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Claudia</figcaption>
+          </figure>
+        </div>
+        <div class="modal-footer flex-column flex-sm-row">
+          <button type="button" class="btn btn-secondary w-100 w-sm-auto mb-3 mb-sm-0" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ¿Quiénes pueden atenderse? -->
+  <section class="pt-5 mt-lg-3 mt-xl-4 mt-xxl-5" id="quienes_pueden_atenderse">
+    <div class="container pt-1 pt-sm-4 pt-lg-5 mt-md-2">
+      <h2 class="h1 pb-1 pb-lg-3">¿Quiénes pueden atenderse en TRINO?</h2>
+      <ul class="list-unstyled">
+        <li class="d-flex align-items-center mb-3">
+          <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#chk"/></svg>
+          <div class="ps-2 ms-1 text-nav fw-medium">Personas mayores de 18 años, que busquen atención online.</div>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#chk"/></svg>
+          <div class="ps-2 ms-1 text-nav fw-medium">Personas con sobrepeso u obesidad que deseen bajar de peso de manera duradera, segura y saludable.</div>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#chk"/></svg>
+          <div class="ps-2 ms-1 text-nav fw-medium">Personas con obesidad que no cumplan criterios para un tratamiento quirúrgico o que prefieran un manejo sin cirugía.</div>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#chk"/></svg>
+          <div class="ps-2 ms-1 text-nav fw-medium">Personas que después de una cirugía bariátrica estén recuperando peso.</div>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#chk"/></svg>
+          <div class="ps-2 ms-1 text-nav fw-medium">Personas que quieran mejorar sus conductas alimentarias de sobreingesta, por ejemplo atracones o alimentación nocturna.</div>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+          <svg class="d-block flex-shrink-0 text-primary" width="24" height="24" fill="currentColor" aria-hidden="true"><use href="#chk"/></svg>
+          <div class="ps-2 ms-1 text-nav fw-medium">Personas que deseen prevenir la obesidad.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer bg-secondary py-5 mt-5">
+  <div class="container pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5">
+    <div class="border-bottom text-center pb-4">
+      <a class="navbar-brand d-inline-flex text-nav py-0 mb-3 mb-md-4" href="#">
+        <img src="assets/img/landing/trino/logo/logo3.png" width="200" alt="TRINO">
+      </a>
+      <ul class="nav justify-content-center py-1 pb-sm-2">
+        <li class="nav-item">
+          <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle mx-2" href="https://www.instagram.com/dra.perlaletelier_trino" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="ai-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-sm-flex align-items-center justify-content-between pt-4 mt-2 mt-sm-0">
+      <p class="nav fs-sm order-sm-1 justify-content-center mb-0">
+        <span class="text-body-secondary">Escríbenos a</span>
+        <a class="nav-link fw-normal p-0 ms-1" href="mailto:contacto@trinoonline.cl" rel="noopener">contacto@trinoonline.cl</a>
+      </p>
+      <p class="nav fs-sm justify-content-center mb-0">
+        <span class="text-body-secondary">&copy; 2026 TRINO. Todos los derechos reservados.</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Volver arriba -->
+<a class="btn-scroll-top" href="#top" data-scroll aria-label="Volver arriba">
+  <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+  </svg>
+  <i class="ai-arrow-up"></i>
+</a>
+
+<!-- Botón flotante de WhatsApp -->
 <div class="whatsapp-float-container">
   <div class="whatsapp-tooltip">¿Tienes dudas? Chatea con nosotros</div>
-  <a href="https://wa.me/56967083855?text=Hola%20TRINO,%20quisiera%20informacion%20sobre%20el%20tratamiento" 
-     target="_blank" 
-     class="whatsapp-float-btn"
-     id="whatsapp-btn"
-     title="Contactar por WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+  <a href="https://wa.me/56967083855?text=Hola%20TRINO,%20quisiera%20informacion%20sobre%20el%20tratamiento" target="_blank" rel="noopener" class="whatsapp-float-btn" id="whatsapp-btn" title="Contactar por WhatsApp" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
       <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
     </svg>
   </a>
 </div>
-</body>
 
+<!-- Scripts de librerías -->
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+<script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+<script src="assets/vendor/@fullcalendar/core/index.global.min.js"></script>
+<script src="assets/vendor/@fullcalendar/daygrid/index.global.min.js"></script>
+<script src="assets/vendor/@fullcalendar/list/index.global.min.js"></script>
+<script src="assets/vendor/@fullcalendar/timegrid/index.global.min.js"></script>
+<script src="assets/vendor/@fullcalendar/bootstrap5/index.global.min.js"></script>
+<script src="assets/js/theme.min.js"></script>
+
+<script>
+  // Cierra el menú móvil al elegir una opción
+  (function () {
+    var menu = document.getElementById('navbarNav');
+    var collapse = new bootstrap.Collapse(menu, { toggle: false });
+    menu.querySelectorAll('.nav-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        if (window.innerWidth < 992) { collapse.hide(); }
+      });
+    });
+  })();
+
+  // Carga la agenda de Reservo solo cuando se abre el modal
+  document.getElementById('reservarHora').addEventListener('show.bs.modal', function () {
+    var f = document.getElementById('reservoFrame');
+    if (f && !f.getAttribute('src')) { f.setAttribute('src', f.getAttribute('data-src')); }
+  });
+</script>
+</body>
 </html>
